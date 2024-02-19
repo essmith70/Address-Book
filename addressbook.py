@@ -21,9 +21,12 @@ while True:
       print('Your search result is : ' + book[name] )
     elif choice == '3':
       name = input('Enter name:')
-      del book[name]
+      input('Are you sure you want to delete ' + name +  '?')
+      if input == 'yes':
+        del book[name]
     elif choice == '4':
       break
     else:
       print('Invalid choice')
+      
       
